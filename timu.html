@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>测测你，打铁花知多少？</title>
+	<link rel="stylesheet" href="css/yy.css" type="">
+	<style>
+		body {
+            background-image: url('res/ti/back.jpg');
+        }
+	</style>
+
+
+	<script type="text/javascript">
+
+
+
+		var result1 = 'A';
+		var result2 = 'C';
+		var result3 = 'B';
+
+
+		function check1() {
+			var obj = document.getElementsByName("practise");
+			var list = document.getElementsByClassName("test1")[0];
+			for (var i = 0; i < obj.length; i++) {
+				if (obj[i].checked) {
+					if (obj[i].value == result1)
+						list.getElementsByClassName("res1")[0].innerHTML = "<h3>回答正确！</h3>";
+					else
+						list.getElementsByClassName("res1")[0].innerHTML = "<h3>回答错误！答案是A！</h3>";
+				}
+			}
+		}
+
+		function check2() {
+			var obj = document.getElementsByName("practise");
+			var list = document.getElementsByClassName("test2")[0];
+			for (var i = 0; i < obj.length; i++) {
+				if (obj[i].checked) {
+					if (obj[i].value == result2)
+						list.getElementsByClassName("res2")[0].innerHTML = "<h3>回答正确！</h3>";
+					else
+						list.getElementsByClassName("res2")[0].innerHTML = "<h3>回答错误！答案是C！</h3>";
+				}
+			}
+		}
+
+		function check3() {
+			var obj = document.getElementsByName("practise");
+			var list = document.getElementsByClassName("test3")[0];
+			for (var i = 0; i < obj.length; i++) {
+				if (obj[i].checked) {
+					if (obj[i].value == result3)
+						list.getElementsByClassName("res3")[0].innerHTML = "<h3>回答正确！</h3>";
+					else
+						list.getElementsByClassName("res3")[0].innerHTML = "<h3>回答错误！答案是B！</h3>";
+				}
+			}
+		}
+
+		function check4() {
+			var obj = document.getElementsByName("practise");
+			var list = document.getElementsByClassName("test4")[0];
+			for (var i = 0; i < obj.length; i++) {
+				if (obj[i].checked) {
+					if (obj[i].value == result2)
+						list.getElementsByClassName("res2")[0].innerHTML = "<h3>回答正确！</h3>";
+					else
+						list.getElementsByClassName("res2")[0].innerHTML = "<h3>回答错误！答案是C！</h3>";
+				}
+			}
+		}
+
+		function check5() {
+			var obj = document.getElementsByName("practise");
+			var list = document.getElementsByClassName("test5")[0];
+			for (var i = 0; i < obj.length; i++) {
+				if (obj[i].checked) {
+					if (obj[i].value == result2)
+						list.getElementsByClassName("res2")[0].innerHTML = "<h3>回答正确！</h3>";
+					else
+						list.getElementsByClassName("res2")[0].innerHTML = "<h3>回答错误！答案是C！</h3>";
+				}
+			}
+		}
+
+
+		function show1() {
+
+
+			document.getElementsByClassName("test1")[0].style.display = "block";
+			document.getElementsByClassName("test2")[0].style.display = "none";
+			document.getElementsByClassName("test3")[0].style.display = "none";
+			document.getElementsByClassName("test4")[0].style.display = "none";
+			document.getElementsByClassName("test5")[0].style.display = "none";
+		}
+
+		function show2() {
+			document.getElementsByClassName("test2")[0].style.display = "block";
+			document.getElementsByClassName("test1")[0].style.display = "none";
+			document.getElementsByClassName("test3")[0].style.display = "none";
+			document.getElementsByClassName("test4")[0].style.display = "none";
+			document.getElementsByClassName("test5")[0].style.display = "none";
+
+		}
+
+		function show3() {
+			document.getElementsByClassName("test3")[0].style.display = "block";
+			document.getElementsByClassName("test1")[0].style.display = "none";
+			document.getElementsByClassName("test2")[0].style.display = "none";
+			document.getElementsByClassName("test4")[0].style.display = "none";
+			document.getElementsByClassName("test5")[0].style.display = "none";
+		}
+
+		function show4() {
+			document.getElementsByClassName("test3")[0].style.display = "none";
+			document.getElementsByClassName("test1")[0].style.display = "none";
+			document.getElementsByClassName("test2")[0].style.display = "none";
+			document.getElementsByClassName("test4")[0].style.display = "block";
+			document.getElementsByClassName("test5")[0].style.display = "none";
+
+		}
+
+		function show5() {
+			document.getElementsByClassName("test3")[0].style.display = "none";
+			document.getElementsByClassName("test1")[0].style.display = "none";
+			document.getElementsByClassName("test2")[0].style.display = "none";
+			document.getElementsByClassName("test4")[0].style.display = "none";
+			document.getElementsByClassName("test5")[0].style.display = "block";
+
+		}
+
+
+	</script>
+</head>
+
+<body>
+	<div class="Page_content">
+		<div class="Content1">
+			<div id="test_header">
+				<h3>让我测测你，打铁花知多少？</h3>
+			</div>
+			<div id="small_test">
+				<div class="test1">
+					<form>
+						<br>
+						<h3>1、打铁花是哪个国家的非物质文化遗产</h3>
+						<h4><input type="radio" name="practise" value="A">A.&nbsp;&nbsp;中国</h4>
+						<h4><input type="radio" name="practise" value="B">B.&nbsp;&nbsp;韩国</h4>
+						<h4><input type="radio" name="practise" value="C">C.&nbsp;&nbsp;日本</h4>
+						<h4><input type="button" class="butt3" onclick="check1()" value="对对答案"></h4>
+					</form>
+					<div class="res1"></div>
+					<div id="change">
+						<ul>
+							<li>
+								<h4>前面没有了捏</h4>
+							</li>
+							<li onclick="show2()">
+								<h4>下一题</h4>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="test2" style="display:none;">
+					<form>
+						<br>
+						<h3>2、打铁花开始于哪个朝代</h3>
+						<h4><input type="radio" name="practise" value="A">A.&nbsp;&nbsp;唐朝</h4>
+						<h4><input type="radio" name="practise" value="B">B.&nbsp;&nbsp;元朝</h4>
+						<h4><input type="radio" name="practise" value="C">C.&nbsp;&nbsp;宋朝</h4>
+						<h4><input type="button" class="butt3" onclick="check2()" value="对对答案"></h4>
+					</form>
+					<div class="res2"></div>
+					<div id="change">
+						<ul>
+							<li onclick="show1()">
+								<h4>上一题</h4>
+							</li>
+							<li onclick="show4()">
+								<h4>下一题</h4>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="test4" style="display:none;">
+					<form>
+						<br>
+						<h3>3、“确山铁花”什么时候入选国家级第二批非物质文化遗产保护项目</h3>
+						<h4><input type="radio" name="practise" value="A">A.&nbsp;&nbsp;2006年</h4>
+						<h4><input type="radio" name="practise" value="B">B.&nbsp;&nbsp;2011年</h4>
+						<h4><input type="radio" name="practise" value="C">C.&nbsp;&nbsp;2008年</h4>
+						<h4><input type="button" class="butt3" onclick="check4()" value="对对答案"></h4>
+					</form>
+					<div class="res2"></div>
+					<div id="change">
+						<ul>
+							<li onclick="show2()">
+								<h4>上一题</h4>
+							</li>
+							<li onclick="show5()">
+								<h4>下一题</h4>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="test5" style="display:none;">
+					<form>
+						<br>
+						<h3>4、打铁花主要流传于哪个地区</h3>
+						<h4><input type="radio" name="practise" value="A">A.&nbsp;&nbsp;京沪地区</h4>
+						<h4><input type="radio" name="practise" value="B">B.&nbsp;&nbsp;苏浙地区</h4>
+						<h4><input type="radio" name="practise" value="C">C.&nbsp;&nbsp;豫晋地区</h4>
+						<h4><input type="button" class="butt3" onclick="check5()" value="对对答案"></h4>
+					</form>
+					<div class="res2"></div>
+					<div id="change">
+						<ul>
+							<li onclick="show4()">
+								<h4>上一题</h4>
+							</li>
+							<li onclick="show3()">
+								<h4>下一题</h4>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="test3" style="display:none;">
+					<form>
+						<br>
+						<h3>5、打铁花在哪个朝代最为繁盛</h3>
+						<h4><input type="radio" name="practise" value="A">A.&nbsp;&nbsp;宋朝</h4>
+						<h4><input type="radio" name="practise" value="B">B.&nbsp;&nbsp;明清</h4>
+						<h4><input type="radio" name="practise" value="C">C.&nbsp;&nbsp;现代</h4>
+						<h4><input type="button" class="butt3" onclick="check3()" value="对对答案"></h4>
+					</form>
+					<div class="res3"></div>
+					<div id="change">
+						<ul>
+							<li onclick="show2()">
+								<h4>上一题</h4>
+							</li>
+							<li>
+								<h4>后面没有了捏</h4>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="footer">
+				<ul>
+					<li id="footer_li1">
+						<a href="index.html">
+							<h3>返回首页</h3>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
